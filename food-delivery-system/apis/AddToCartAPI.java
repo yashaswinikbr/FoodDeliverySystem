@@ -14,15 +14,15 @@ public class AddToCartAPI {
 
     public void addToCart(String userToken, int foodItemId) {
         if (userToken == null || userToken.length() == 0 || foodItemId < 0) {
-            // add an exception
+            // throw an exception
         }
         User user = userManager.getUserByToken(userToken);
         if (user == null) {
-            // add an exception
+            // throw an exception
         }
         FoodItem foodItem = foodItemSearcher.searchById(foodItemId);
         if (foodItem == null) {
-
+            // throw an exception
         }
         cartManager.addItemToCart(user, foodItem);
     }
