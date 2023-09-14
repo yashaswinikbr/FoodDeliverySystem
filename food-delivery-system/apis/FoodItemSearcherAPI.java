@@ -23,3 +23,4 @@ public class FoodItemSearcherAPI {
 // Get only those food items whose (name matches foodItemName) AND  (MT matches mealType) AND  (cT matches cuisines) AND  (r > rating)
 //FETCH : (name matches foodItemName)
 //FILTER :  F1 F2 F3
+// Extension :  can aslo add healthy item filter: based on the carbs level, protein etc
