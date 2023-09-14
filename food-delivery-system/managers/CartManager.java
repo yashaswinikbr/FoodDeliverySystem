@@ -41,6 +41,12 @@ public class CartManager {
         DataAccessor.checkOutCart(user);
     }
 
+    //Systems: access on diff levels 
+    // Read only access, write only access .....
+    // Permissions : abstract 
+    //AWS, addToCart, Update, etc
+
+    
     private boolean isFoodItemFromSameRestaurant(User user, FoodItem foodItem) {
         List<CartItem> cartItems = getUserCart(user);
          return cartItems.isEmpty() || (cartItems.get(0).getFoodItem().getRestaurantId() == foodItem.getRestaurantId());
