@@ -22,7 +22,7 @@ public class FoodItemSearcher {
                 if (filter.filter(foodItem))
                     filteredFoodItems.add(foodItem);
             }
-            foodItems = filteredFoodItems;
+            foodItems = filteredFoodItems; //implements filter 1 then filter2 on 1 and 3 on 2 .....
         }
         return foodItems;
     }
