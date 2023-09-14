@@ -16,3 +16,10 @@ public class FoodItemSearcherAPI {
     }
 
 }
+
+
+//Searcher: Generic - Should use Open close principle
+//The query: 
+// Get only those food items whose (name matches foodItemName) AND  (MT matches mealType) AND  (cT matches cuisines) AND  (r > rating)
+//FETCH : (name matches foodItemName)
+//FILTER :  F1 F2 F3
